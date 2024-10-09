@@ -1,8 +1,8 @@
 {
-  "name": "fab-proxy",
+  "name": "fab-paper-proxies",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://matan-makes.github.io/fab-proxy",
+  "homepage": "https://matan-makes.github.io/fab-paper-proxies",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
