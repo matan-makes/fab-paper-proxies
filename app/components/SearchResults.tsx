@@ -10,8 +10,7 @@ interface SearchResultsProps extends WithClassName {
 const SearchResults = ({ results, className }: SearchResultsProps) => {
   return (
     <div
-      className={`${className} grid grid-cols-3 gap-3 overflow-y-scroll rounded-xl bg-slate-100
-        dark:bg-slate-800`}
+      className={`${className} grid grid-cols-3 gap-3 overflow-y-scroll rounded-xl bg-inherit`}
     >
       {results.map((card: Card) => {
         return (

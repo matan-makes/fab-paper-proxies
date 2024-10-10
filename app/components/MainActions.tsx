@@ -1,9 +1,10 @@
-import React from "react";
-import ThemeToggle from "./ThemeToggle";
+import React from 'react';
+import ThemeToggle from './ThemeToggle';
+import { WithClassName } from '../types';
 
-const MainActions = () => {
+const MainActions = ({ className }: WithClassName) => {
   return (
-    <div className="row-start-1 row-end-4  col-span-full bg-slate-100 dark:bg-slate-800 p-3 rounded-md">
+    <div className={`${className} rounded-md bg-inherit p-3`}>
       Main Actions
       <ThemeToggle />
     </div>
