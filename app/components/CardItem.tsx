@@ -77,7 +77,7 @@ const CardItem = ({ card, className }: CardProps) => {
       className={`grid max-h-96 grid-cols-4 grid-rows-12 gap-2 rounded-xl border-2 border-black
         p-3 dark:border-white ${className}`}
     >
-      <h1 className="col-span-2 col-start-1 row-start-1 row-end-2">
+      <h1 className="col-span-2 col-start-1 row-start-1 row-end-2 text-xl">
         {card.name}
       </h1>
       <div className="col-span-2 row-start-1 row-end-2 text-right">

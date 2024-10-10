@@ -1,7 +1,7 @@
-import { Card } from "@flesh-and-blood/types";
-import React from "react";
-import CardItem from "./CardItem";
-import { WithClassName } from "../types";
+import { Card } from '@flesh-and-blood/types';
+import React from 'react';
+import CardItem from './CardItem';
+import { WithClassName } from '../types';
 
 interface SearchResultsProps extends WithClassName {
   results: Card[];
@@ -10,7 +10,8 @@ interface SearchResultsProps extends WithClassName {
 const SearchResults = ({ results, className }: SearchResultsProps) => {
   return (
     <div
-      className={`${className} bg-slate-100 dark:bg-slate-800 p-4 rounded-md grid grid-cols-4 overflow-y-scroll gap-3`}
+      className={`${className} grid grid-cols-3 gap-3 overflow-y-scroll rounded-xl bg-slate-100
+        dark:bg-slate-800`}
     >
       {results.map((card: Card) => {
         return (
