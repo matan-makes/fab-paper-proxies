@@ -1,18 +1,19 @@
-import type { Metadata } from "next";
+import type { Metadata } from 'next';
 
-import "./globals.css";
-import { ThemeProvider } from "next-themes";
-import { Afacad } from "next/font/google";
+import './globals.css';
+import { ThemeProvider } from 'next-themes';
+import { Afacad } from 'next/font/google';
 
 const afacad = Afacad({
-  weight: ["400", "600"],
-  style: ["normal", "italic"],
-  subsets: ["latin"],
+  weight: ['400', '600'],
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
-  title: "fab paper proxies",
-  description: "A site to generate some paper proxies for flesh & blood.",
+  title: 'fab paper proxies',
+  description: 'A site to generate some paper proxies for flesh & blood.',
 };
 
 export default function RootLayout({
