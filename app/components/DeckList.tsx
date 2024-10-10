@@ -1,8 +1,16 @@
 import React from "react";
+import { WithClassName } from "../types";
+import { Card } from "@flesh-and-blood/types";
 
-const DeckList = () => {
+interface DeckListProps extends WithClassName {
+  decklist: Card[];
+}
+
+const DeckList = ({ className }: DeckListProps) => {
   return (
-    <div className="row-start-4 row-end-12 col-start-4 col-end-5 bg-slate-100 dark:bg-slate-800 p-3 rounded-md">
+    <div
+      className={`${className}  bg-slate-100 dark:bg-slate-800 p-3 rounded-md`}
+    >
       DeckList
     </div>
   );
